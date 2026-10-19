@@ -1,0 +1,103 @@
+
+/* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #245b8f;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #dddddd;
+}
+
+h2 {
+    color: #2878a8;
+}
+
+/* 1. Kiểu đánh dấu hình vuông */
+.mon-hoc {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.lo-trinh {
+    list-style-type: upper-roman;
+}
+
+/* 3. Dùng hình ảnh làm dấu đánh dấu */
+.cong-cu {
+    list-style-image: url("https://cdn-icons-png.flaticon.com/16/1828/1828640.png");
+}
+
+/* 4. Vị trí dấu đánh dấu */
+.outside {
+    list-style-position: outside;
+    background-color: #eaf3ff;
+    padding: 20px 35px;
+    max-width: 350px;
+}
+
+.inside {
+    list-style-position: inside;
+    background-color: #eaf3ff;
+    padding: 20px;
+    max-width: 350px;
+}
+
+/* 5. Thuộc tính rút gọn list-style */
+.rut-gon {
+    list-style: square inside;
+}
+
+/* 6. Màu sắc và khoảng cách */
+.ngon-ngu {
+    list-style-type: circle;
+    background-color: #e2f4e8;
+    color: #176638;
+    padding: 20px 40px;
+    border-radius: 6px;
+}
+
+.ngon-ngu li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* 7. Bài tập tổng hợp */
+.lo-trinh-web {
+    list-style: upper-roman inside;
+    background-color: #e8eafa;
+    color: #303b80;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.lo-trinh-web li {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
