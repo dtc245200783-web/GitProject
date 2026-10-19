@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form sở thích cá nhân</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            padding: 30px;
+        }
+
+        .form-box {
+            max-width: 450px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #cccccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        label {
+            display: inline-block;
+            margin: 8px 0;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 95%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <h2>Thông tin cá nhân</h2>
+
+        <form action="#" method="get">
+            <label for="yourname">Họ và tên:</label>
+            <input type="text" id="yourname" name="yourname"
+                   placeholder="Nhập họ và tên" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Nhập email" required>
+
+            <p><strong>Sở thích của bạn:</strong></p>
+
+            <label>
+                <input type="checkbox" name="hobby" value="music">
+                Nghe nhạc
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="hobby" value="football">
+                Chơi bóng đá
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="hobby" value="travel">
+                Du lịch
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox" name="hobby" value="technology">
+                Công nghệ
+            </label>
+
+            <div class="buttons">
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
